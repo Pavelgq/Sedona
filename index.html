@@ -115,52 +115,66 @@
                 <p>
                     Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
-                
-            </div>
-            
-            <button class="button search-hotel">Поиск гостиницы в Седоне</button>
-            
-        
-            <div class="location-image-container">
-                <div class="modal modal-search">
-                
-                    <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-                        <p>
-                            <label class="input-date" for="input-date">Дата заезда:</label>
-                            <input class="input-date-icon" id="input-date" type="text" name="datein" placeholder="24 апреля 2017">
-                        </p>
-            
-                        <p>
-                            <label class="output-date" for="output-date">Дата выезда:</label>
-                            <input class="output-date-icon" id="output-date" type="text" name="dateout" placeholder="4 июля 2017">
-                        </p>
-            
-                        <p>
-                            <label class="adult" for="adult-number">Взрослые:</label>
-                            <input type="number" min="0" max="20" step="1" value="0" class="adult-number">
-                            <button type="button" spinner-button="up">+</button>
-                            <button type="button" spinner-button="down">−</button>
-                        </p>
-                        <p>
-                            <label class="child" for="child-number">Дети:</label>
-                            <input type="number" min="0" max="20" step="1" value="0" class="child-number">
-                            <button type="button" spinner-button="up">+</button>
-                            <button type="button" spinner-button="down">−</button>
-                        </p>
-            
-                        <button type="button" class="search-button">Найти</button>
-                </div>
-                <figure class="location-image-wrapper"><img src="img/map.jpg" alt="Карта метоположения Седоны"></figure>
 
             </div>
+
+            <button class="button search-hotel">Поиск гостиницы в Седоне</button>
+
+
+            <div class="location-image-container">
+                <div class="modal modal-search">
+
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+
+                        <p class="date-enter">
+                            <label class="input-date" for="input-date">Дата заезда:</label>
+                            <input class="input-date-icon" id="input-date" type="text" name="datein"
+                                placeholder="24 апреля 2017">
+                        </p>
+
+                        <p class="date-enter">
+                            <label class="output-date" for="output-date">Дата выезда:</label>
+                            <input class="output-date-icon" id="output-date" type="text" name="dateout"
+                                placeholder="4 июля 2017">
+                        </p>
+                        <div class="search-form-wrapper">
+                            <div class="form-adult">
+                                <label class="adult" for="adult-number">Взрослые:</label>
+                                <div class="add-button-wrapper">
+                                    
+                                    <input type="text" class="child-number" placeholder="0">
+                                    <button class="add-button button-minus"></button>
+                                    <button class="add-button button-plus"></button>
+                                </div>
+                            </div>
+
+
+                            <div class="form-child">
+                                <label class="child" for="child-number">Дети:</label>
+                                <div class="add-button-wrapper">
+                                  
+                                    <input type="text" class="child-number" placeholder="0">
+                                    <button class="add-button button-minus" spinner-button="down"></button>
+                                    <button class="add-button button-plus" spinner-button="up"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="search-button">Найти</button>
+                    </form>
+                </div>
+                    <figure class="location-image-wrapper">
+                        <img src="img/map.jpg" alt="Карта метоположения Седоны">
+                    </figure>
+
+                
         </section>
         <footer class="main-footer">
             <div class="footer-container">
                 <div class="footer-hashtag-wrapper">
                     <p class="footer-hashtag">#VISITSEDONA</p>
                 </div>
-                
-                
+
+
                 <div class="footer-social">
 
                     <ul>
@@ -189,7 +203,7 @@
         </footer>
     </div>
 
-   
+
 
 
 </body>
