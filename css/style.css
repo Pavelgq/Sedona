@@ -158,7 +158,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin-bottom: 50px;
 
-
+    z-index: 9;
     background-color: #ffffff
 }
 
@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
 .features-description .features-number {
     position: relative;
     margin-bottom: 20px;
-
+    
     font-family: 'PT Sans Regular', Arial, sans-serif;
 
     font-size: 14px;
@@ -416,7 +416,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     padding: 0;
-
+    z-index: 8;
 
     background-color: #ffffff
 }
@@ -468,6 +468,8 @@ input[type="radio"].visually-hidden {
 
     background-color: #766357;
     border: none;
+
+    z-index: 10;
 }
 
 .button:hover,
@@ -492,14 +494,27 @@ input[type="radio"].visually-hidden {
 }
 
 .location-image-wrapper {
+    position: relative;
+    padding-bottom:  40%; 
+    height: 0;
+    overflow: hidden;
+    width: 100%
+
+}
+.location-image-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0;
+    height: 100%;
 }
 
 .location-image-wrapper img {
+    position: absolute;
+    top: 0;
     width: 100%;
-}
 
+}
 /*footer*/
 .main-footer {
     position: relative;
@@ -609,9 +624,12 @@ input[type="radio"].visually-hidden {
 /*modal*/
 
 .modal {
+    
+    
     position: absolute;
     background-color: #ffffff;
-
+    
+    z-index: 11;
 }
 
 .modal-search {
@@ -627,12 +645,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: 'PT Sans Bold', Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
+    
 }
 
 .search-form label {
@@ -799,4 +819,56 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
     border: none;
     
+}
+@keyframes bounce {
+    0% {
+        transform: scale(0.1);
+    }
+
+    70% {
+        transform: scale(0.7);
+        
+    }
+
+    90% {
+        transform: scale(0.9);
+        
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes unbounce {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(0.7);
+        
+    }
+
+    100% {
+        
+        transform: scale(0);
+        
+        display: none;
+        
+    }
+}
+
+.modal_hide{
+    
+    animation: unbounce 0.6s forwards;
+    
+}
+.modal_show {
+    display: block;
+
+    animation: bounce 0.6s;
 }
