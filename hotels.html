@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEDONA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li class="item-left"><a href="#">Информация</a></li>
+                    <li class="item-left"><a href="#">Фото и видео</a></li>
+                    <li>
+                        <a class="main-header-logo" href="/index.html">
+                            <img src="img/logo.svg" width="138" height="70" alt="Логотип City of Sedona" />
+                        </a>
+                    </li>
+                    <li class="item-right"><a href="#">Карта штата</a></li>
+                    <li class="item-right"><a href="/hotels.html">Гостиницы</a></li>
+                </ul>
+
+
+            </nav>
+
+        </header>
+        <section class="filters">
+            <form class="filters-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="filter_container"> 
+                    <div class="comfort_wrapper">
+                        <h3>Инфроструктура:</h3>
+                        <ul class="comfort_list">
+                            <li class="comfort_item">
+                                <label class="comfort_checkbox">
+                                    <input type="checkbox" name="swim" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Бассейн
+                                </label>
+                            </li>
+                            <li class="comfort_item">
+                                <label class="comfort_checkbox">
+                                    <input type="checkbox" name="parking" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Парковка
+                                </label>
+                            </li>
+                            <li class="comfort_item">
+                                <label class="comfort_checkbox">
+                                    <input type="checkbox" name="wifi" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Wi-fi
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="housing_wrepper">
+                        <h3>Тип жилья:</h3>
+                        <ul class="housing_list">
+                            <li class="housing_item">
+                                <label class="housing_checkbox">
+                                    <input type="checkbox" name="hotel" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Гостиница
+                                </label>
+                            </li>
+                            <li class="housing_item">
+                                <label class="housing_checkbox">
+                                    <input type="checkbox" name="motel" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Мотель
+                                </label>
+                            </li>
+                            <li class="housing_item">
+                                <label class="housing_checkbox">
+                                    <input type="checkbox" name="apart" id="" class="visually-hidden" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Апартаменты
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-wrapper">
+                    <h3>Стоимость в сутки (Р):</h3>
+                    <div class="price-panel">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="slider-panel">
+                        <span class="range-toggle range-toggle-left"></span>
+                        <span class="range-toggle range-toggle-right"></span>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                </div>
+            </form>
+        </section>
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-hashtag-wrapper">
+                    <p class="footer-hashtag">#VISITSEDONA</p>
+                </div>
+
+
+                <div class="footer-social">
+
+                    <ul>
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
+                                <img src="svg/twitter.svg" height="15" width="17" alt="Твиттер">
+
+                            </a></li>
+
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+                                <img src="svg/fb-icon.svg" height="22" width="12" alt="Фейсбук">
+
+                            </a></li>
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Ютуб</span>
+                                <img src="svg/youtube.svg" height="16" width="20" alt="Ютуб">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <b>WEBSITE BY</b>
+                    <a class="footer-copyright-htmlacademy" href="https://htmlacademy.ru">
+                        <img src="svg/logo-htmlacademy.svg" width="130" height="50" alt="Лого html academy">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
