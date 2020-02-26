@@ -1061,21 +1061,241 @@ input[type="radio"].visually-hidden {
 /*Catalog*/
 .filters {
     padding-top: 29px;
-    background: #647e94 no-repeat url(/img/filter_background.jpg);
+    background-color:#647e94;
+    background-image: url(/img/filter_background.jpg);
+    background-repeat:  no-repeat ;
     background-size: 100% auto;
+    color:#ffffff;
+
+    font-family: 'PT Sans Regular', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+.filters legend {
+    font-family: 'PT Sans Bold', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 30px;
 }
 .filters-form {
     display: flex;
     justify-content: space-between;
+
 }
 
 .filter_container {
     display: flex;
-    width: 30%;
-    justify-content: space-between;
+    width: 58%;
     margin-left: 6%;
+   
 }
 .comfort_wrapper {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    border: none;
+    width: 256px;
     
+}
+
+.filter_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 18px;
+
+}
+.filter-option {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    list-style: none;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -3px;
+
+    width: 27px;
+    height: 27px;
+    background-image: url(../svg/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    
+}
+
+.filter-input-checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -3px;
+
+    width: 27px;
+    height: 27px;
+    background-image: url(../svg/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input:disabled+label {
+    color: #000000;
+
+    opacity: 0.5;
+}
+
+
+
+
+.housing_wrepper{
+    margin-left: 6%;
+    width: 256px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    border: none;
+}
+.price-wrapper{
+    padding: 0;
+    margin: 0;
+    
+    border: none;
+
+    width: 30%;
     margin-right: 6%;
+
+    
+    margin-bottom: 30px;
+
+    width: 256px;
+}
+.price-panel {
+    display: flex;
+    
+    border:2px solid #ffffff;
+    border-radius:2px;
+
+    margin-bottom: 10px;
+}
+.price-panel p {
+    margin: 6px 0;
+    width: 50%;
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: center;
+}
+.price-panel label {
+    position: relative;
+    display: flex;
+    
+    width: 50%;
+    
+}
+.price-panel label:last-child::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+
+    width: 2px;
+    height: 23px;
+    background-color: #ffffff;
+}
+.price-panel input[type="text"] {
+    width: 50%;
+    vertical-align: center;
+    box-sizing: border-box;
+
+    font: inherit;
+    color:#ffffff;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    
+}
+.slider-panel {
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+
+}
+.range-toggle{
+    
+    position: absolute;
+    top: 0;
+    
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../svg/filter-button.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+
+}
+.range-toggle:hover {
+    transform: scale(1.1);
+}
+.range-toggle-left {
+    left: 50%;
+}
+
+.range-toggle-right {
+    right: 10%;
+}
+.range-line {
+    position: absolute;
+    
+    top:9px;
+    
+    height: 2px;
+    background-color: #ffffff;
+}
+.range-line-left {
+    left: 0;
+    width: 50%;
+    opacity: 0.3;
+}
+.range-line-right {
+    right: 0;
+    width: 10%;
+    opacity: 0.3;
+}
+.range-line-center{
+    left: 50%;
+    width: 40%;
+} 
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 9px 35px;
+
+    font: inherit;
+    text-transform: uppercase;
+    color:#ffffff;
+    
+    background-color: rgba(0, 0, 0, 0);
+
+    border: 2px solid #ffffff;
+    border-radius:2px;
+
+}
+.btn-transparent:hover,
+.btn-transparent:focus{
+    color: #000000;
+    background-color:#ffffff;
 }
