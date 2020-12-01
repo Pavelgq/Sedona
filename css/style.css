@@ -1520,6 +1520,7 @@ input[type="radio"].visually-hidden {
 
 }
 .result-rating .result-rating-stars {
+    display: inline-flex;
     margin-bottom: 47px;
 }
 .result-rating-text span {
